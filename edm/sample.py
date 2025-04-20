@@ -124,7 +124,7 @@ def evaluate_performance(labels, pred):
     return best_performance, best_threshold
 
 device = 'cpu'
-ckpt = torch.load('edm_ckpt_epoch1500.pth', map_location=device)
+ckpt = torch.load('edm_ckpt_1.2.pth', map_location=device)
 ckpt = {k.replace('module.', ''): v for k, v in ckpt.items()}
 
 # score_model = torch.nn.DataParallel(ScoreNet(marginal_prob_std=marginal_prob_std_fn))

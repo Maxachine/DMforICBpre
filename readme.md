@@ -9,7 +9,6 @@
 ## 环境依赖
 - Python 3.10.14
 - PyTorch 2.5.0
-- 安装依赖：`pip install -r requirements.txt`
 
 ## 代码结构
 ```

@@ -23,3 +23,31 @@
 ├── train.py # 针对所有特征组合训练模型
 └── test.py # 对所有模型测试
 ```
+
+
+## 使用说明
+
+### EDM与ScoreMatching
+可在CPU或GPU上进行。
+1. 训练模型：
+```bash
+cd EDM # ScoreMatching
+python train.py
+```
+2. 测试模型：
+```bash
+cd EDM # ScoreMatching
+python test.py
+```
+### SM_traverse
+遍历特征组合，训练量较大，建议在GPU上进行。
+1. 训练模型：
+```bash
+cd SM_traverse
+python train.py 
+```
+2. 测试模型：
+```bash
+cd SM_traverse
+python test.py --gpu:0 --model_list:model_batch_aa
+```
